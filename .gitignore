@@ -1,1 +1,7 @@
-models
+data/combined-2
+data/JPEG70-MF3
+data/MF5-JPEG70
+data/OMF3
+data/saved_models
+data/UCID
+Model.ipynb

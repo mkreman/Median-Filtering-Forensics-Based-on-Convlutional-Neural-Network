@@ -1,15 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
 def crop(I, i):
-    dim = I.shape
     I = I[i*64:i*64+64, i*64:i*64+64]
     return I
 
-def jpeg_images(q, path):
-    for i in range(1, 1339):
-        img = 'ucid'+(str(i).zfill(5))+'.tif'
-        I = Image.open(img)
-        name, ext = img.split('.')
-        image = os.path.join(path+name+'.jpeg')
-        I.save(image,"JPEG", quality=q)
+def center_crop(I):
+    img_size = I.shape
+    x = img_size[0]//2 - 32
+    y = img_size[1]//2 - 32
+    return I[x: x+64, y: y+64]
 
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
