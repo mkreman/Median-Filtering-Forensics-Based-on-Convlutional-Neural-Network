@@ -11,7 +11,7 @@ This project follows the following steps
 - A total $16056$ for each class is used to train the model.
 - The MFR layer is applied to each image as the requirement for the model.
 - Define and train the model for classification.
-- Results are computed for the whole UCID Dataset and compared with the [classical approach](https://github.com/nagar-mayank/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git).
+- Results are computed for the whole UCID Dataset and compared with the [classical approach](https://github.com/mkreman/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git).
 - CNN based approach is found to be $99.00\\%$ accurate on the test dataset.
 
 # Data Preparing
@@ -45,6 +45,6 @@ For classification between original and median filtered images, the model gives 
 
 For classification between jpeg and median filtered jpeg images, the model gives $99.84\\%$ on the training dataset and $99.55\\%$ on the validation dataset and $99.35\\%$ on the test dataset.
 
-For classification between jpeg and jpeg compressed images of $5\times 5$ median filtered images, the model gives $99.40\\%$ on the whole UCID dataset. In compression, the [classical approach](https://github.com/nagar-mayank/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) yields $72.24\\%$.
+For classification between jpeg and jpeg compressed images of $5\times 5$ median filtered images, the model gives $99.40\\%$ on the whole UCID dataset. In compression, the [classical approach](https://github.com/mkreman/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) yields $72.24\\%$.
 # Conclusion
-CNN-based model is better than [classical approach](https://github.com/nagar-mayank/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) and can detect median filtering in small and jpeg compressed image blocks and is able to identify cut-and-paste forgeries well.
+CNN-based model is better than [classical approach](https://github.com/mkreman/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) and can detect median filtering in small and jpeg compressed image blocks and is able to identify cut-and-paste forgeries well.
