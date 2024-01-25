@@ -1,3 +1,7 @@
+.gitignore
+.ipynb_checkpoints
+.idea
+__pycache__
 data/combined-2
 data/JPEG70-MF3
 data/MF5-JPEG70

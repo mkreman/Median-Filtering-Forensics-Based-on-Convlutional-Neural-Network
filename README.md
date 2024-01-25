@@ -46,5 +46,21 @@ For classification between original and median filtered images, the model gives 
 For classification between jpeg and median filtered jpeg images, the model gives $99.84\\%$ on the training dataset and $99.55\\%$ on the validation dataset and $99.35\\%$ on the test dataset.
 
 For classification between jpeg and jpeg compressed images of $5\times 5$ median filtered images, the model gives $99.40\\%$ on the whole UCID dataset. In compression, the [classical approach](https://github.com/mkreman/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) yields $72.24\\%$.
+
+# Testing Procedure
+To test the trained model, begin by setting up the required environment with all necessary modules installed. Utilize the requirement.yml file for this purpose.
+
+Execute the following command in your terminal:
+```
+conda env create --name <env name> --file requirement.yml
+```
+Activate the environment and run the test.py script, specifying the image name as a tag.
+
+For instance:
+```
+conda activate <env name>
+python test.py mf3-ucid0010.png
+```
+The image `mf3-ucid0010.png` is a median filtered image (Positive Class) and `Lena.jpeg` is an original image (Negative Class).
 # Conclusion
 CNN-based model is better than [classical approach](https://github.com/mkreman/Forensic-Detection-of-Median-Filtering-in-Digital-Images-Cao_2010.git) and can detect median filtering in small and jpeg compressed image blocks and is able to identify cut-and-paste forgeries well.
