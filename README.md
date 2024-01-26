@@ -55,7 +55,7 @@ Execute the following command in your terminal:
 conda env create --name <env name> --file requirement.yml
 ```
 
-Download the [combined_2_model.h5](https://github.com/mkreman/Median-Filtering-Forensics-Based-on-Convolutional-Neural-Network/releases) and place in the directory `./data/saved_models/`.
+Download the trained model [combined_2_model.h5](https://github.com/mkreman/Median-Filtering-Forensics-Based-on-Convolutional-Neural-Network/releases) and place in the directory `./data/saved_models/`.
 
 Now, activate the environment and run the test.py script, specifying the image name as a tag.
 
