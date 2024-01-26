@@ -5,7 +5,7 @@ import numpy as np
 from keras.models import load_model
 
 
-# To hide warnings
+# To hide warning
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' 
 
 # Getting the image name
